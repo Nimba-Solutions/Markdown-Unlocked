@@ -1,0 +1,28 @@
+minimum_cumulusci_version: '3.78.0'
+project:
+    name: Markdown-Unlocked
+    package:
+        name: Markdown-Unlocked
+        api_version: '63.0'
+    git:
+        default_branch: 'main'
+        prefix_feature: 'feature/'
+        prefix_beta: 'beta/'
+        prefix_release: 'release/'
+    source_format: sfdx
+
+tasks:
+    robot:
+        options:
+            suites: robot/Markdown-Unlocked/tests
+            options:
+                outputdir: robot/Markdown-Unlocked/results
+
+    robot_testdoc:
+        options:
+            path: robot/Markdown-Unlocked/tests
+            output: robot/Markdown-Unlocked/doc/Markdown-Unlocked_tests.html
+
+    run_tests:
+        options:
+            required_org_code_coverage_percent: 75
