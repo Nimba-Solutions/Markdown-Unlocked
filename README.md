@@ -2,6 +2,12 @@
 
 Markdown Unlocked is a Salesforce Unlocked Package that integrates marked.js with Salesforce. Perfect for documentation and rich text formatting, it brings the power and flexibility of markdown directly to your Salesforce org with easy installation and lightweight, extensible, design.
 
+> In the age of AI where complex codebases are refactored in minutes by sophisticated agents - you gave us a utility that tells us: “yes, that is indeed a bulletpoint.”
+>
+> ~ with love, 
+> CP
+
+
 ## Features
 
 - Seamless integration of marked.js with Salesforce Lightning Web Components
