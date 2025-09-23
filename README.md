@@ -1,3 +1,5 @@
+<img width="1104" height="333" alt="image" src="https://github.com/user-attachments/assets/8183c0f1-3954-415a-8da5-63669563be6f" />
+
 # Markdown-Unlocked
 
 Markdown Unlocked is a Salesforce Unlocked Package that integrates marked.js with Salesforce. Perfect for documentation and rich text formatting, it brings the power and flexibility of markdown directly to your Salesforce org with easy installation and lightweight, extensible, design.
