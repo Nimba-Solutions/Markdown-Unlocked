@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>63.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>Record Markdown</masterLabel>
+    <description>Renders markdown content from a field on the current record</description>
+    <targets>
+        <target>lightning__RecordPage</target>
+        <target>lightning__AppPage</target>
+        <target>lightning__HomePage</target>
+        <target>lightningCommunity__Page</target>
+        <target>lightningCommunity__Default</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightning__RecordPage">
+            <property name="fieldApiName" type="String" default="Description" label="Field API Name" description="The API name of the field containing markdown content"/>
+            <property name="objectApiName" type="String" default="Account" label="Object API Name" description="The API name of the object (e.g., Account, Contact, Opportunity)"/>
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

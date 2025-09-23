@@ -1,0 +1,10 @@
+<template>
+    <template if:true={hasContent}>
+        <c-markdown-renderer markdown-content={markdownContent}></c-markdown-renderer>
+    </template>
+    <template if:false={hasContent}>
+        <div class="slds-text-color_weak">
+            No markdown content available
+        </div>
+    </template>
+</template>
