@@ -1,0 +1,48 @@
+{
+    "product": {
+        "title": {
+            "message": "Markdown-Unlocked",
+            "description": "name of product"
+        },
+        "short_description": {
+            "message": "Markdown Unlocked is a Salesforce Unlocked Package that integrates marked.js with Salesforce. Perfect for documentation and rich text formatting, it brings the power and flexibility of markdown directly to your Salesforce org with easy installation and lightweight, extensible, design.",
+            "description": "tagline of product"
+        },
+        "description": {
+            "message": "# Markdown-Unlocked\r\n\r\nMarkdown Unlocked is a Salesforce Unlocked Package that integrates marked.js with Salesforce. Perfect for documentation and rich text formatting, it brings the power and flexibility of markdown directly to your Salesforce org with easy installation and lightweight, extensible, design.\r\n\r\n> In the age of AI where complex codebases are refactored in minutes by sophisticated agents - you gave us a utility that tells us: \u201cyes, that is indeed a bulletpoint.\u201d\r\n>\r\n> ~ with love, \r\n> CP\r\n\r\n\r\n## Features\r\n\r\n- Seamless integration of marked.js with Salesforce Lightning Web Components\r\n- Support for GitHub Flavored Markdown (GFM)\r\n- Automatic line breaks for better readability\r\n- Robust error handling and logging\r\n- Lightweight and performant implementation\r\n- Easy to use and extend\r\n\r\n## Implementation Details\r\n\r\nThe package consists of two main Lightning Web Components:\r\n\r\n1. `markdownRenderer`: The core component that handles markdown rendering\r\n   - Dynamically loads the marked.js library\r\n   - Supports all standard markdown syntax\r\n   - Configurable rendering options\r\n   - Built-in error handling and fallback display\r\n\r\n2. `logger`: A utility component for consistent logging across the application\r\n   - Debug, info, warning, and error level logging\r\n   - Detailed error tracking and reporting\r\n   - Helps with troubleshooting and maintenance\r\n\r\n## Usage\r\n\r\nTo use the markdown renderer in your Lightning Web Components, simply pass a markdown string into `markdown-content` slot:\r\n\r\n```html\r\n<template>\r\n    <c-markdown-renderer markdown-content={markdownContent}></c-markdown-renderer>\r\n</template>\r\n```\r\n\r\n## Development\r\n\r\nTo work on this project in a scratch org:\r\n\r\n1. [Set up CumulusCI](https://cumulusci.readthedocs.io/en/latest/tutorial.html)\r\n2. Run `cci flow run dev_org --org dev` to deploy this project.\r\n3. Run `cci org browser dev` to open the org in your browser.\r\n\r\n## Contributing\r\n\r\nContributions are welcome! Please feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.",
+            "description": "shown on product detail page (markdown)"
+        }
+    },
+    "plan:install": {
+        "title": {
+            "message": "Install Markdown-Unlocked",
+            "description": "title of installation plan"
+        },
+        "preflight_message": {
+            "message": "This will install Markdown-Unlocked and all of its dependencies.",
+            "description": "shown before user starts installation (markdown)"
+        },
+        "post_install_message": {
+            "message": "Success!",
+            "description": "shown after successful installation (markdown)"
+        },
+        "error_message": {
+            "message": "Installation failed.",
+            "description": "shown after failed installation (markdown)"
+        }
+    },
+    "steps": {
+        "Install {product} {version}": {
+            "message": "Install {product} {version}",
+            "description": "title of installation step"
+        },
+        "Update Admin Profile": {
+            "message": "Update Admin Profile",
+            "description": "title of installation step"
+        },
+        "load_sample_data": {
+            "message": "load_sample_data",
+            "description": "title of installation step"
+        }
+    }
+}

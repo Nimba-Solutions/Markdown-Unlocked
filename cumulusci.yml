@@ -27,11 +27,15 @@ tasks:
         options:
             required_org_code_coverage_percent: 75
 
+### MetaDeploy Plans ##########################################################
 plans:
     install:
         slug: install
-        title: Install
+        title: Install Markdown-Unlocked
         tier: primary
+        preflight_message: "This will install Markdown-Unlocked and all of its dependencies."
+        post_install_message: "Success!"
+        error_message: "Installation failed."
         steps:
             1:
                 flow: install_prod
